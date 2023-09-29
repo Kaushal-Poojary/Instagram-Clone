@@ -3,8 +3,7 @@ import React, { Component } from "react";
 import { users } from "../../data/users";
 
 
-export class Stories extends Component {
-  render() {
+const Stories = () => {
     return (
       <View>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
@@ -19,7 +18,6 @@ export class Stories extends Component {
         </ScrollView>
       </View>
     );
-  }
 }
 
 const styles = StyleSheet.create({
