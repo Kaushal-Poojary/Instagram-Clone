@@ -7,11 +7,11 @@ export const posts = [
             'Can\'t believe my team got banned for fixing matches. I am so sad. 😭',
         profile_picture: users[2].imageUrl,
         imageUrl: "https://images.thequint.com/thequint/2015-07/d03612e4-e1a7-4d06-958a-46ddfe53f186/Suspended.png",
-        likes: 683,
+        likes: 68310,
         comments: [
             {
                 user: 'sureshraina3',
-                comment: 'Bhai balcony dilwa do!',
+                comment: 'Bhai balcony dilwa do! Warna IPL chodke chala jaunga',
             },
             {
                 user: users[0].name,
@@ -21,7 +21,7 @@ export const posts = [
     },
     {
         user: users[4].name,
-        caption: 'This is a very good boi.',
+        caption: 'This is a very good boi. 🐕',
         profile_picture: users[4].imageUrl,
         imageUrl:
             'https://images.unsplash.com/photo-1575535468632-345892291673?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
@@ -29,7 +29,7 @@ export const posts = [
         comments: [
             {
                 user: users[5].name,
-                comment: 'Awww! 🐶',
+                comment: 'Awww! 🐶. What a cutipie. Wonder when can I play with it',
             }
         ],
     },
