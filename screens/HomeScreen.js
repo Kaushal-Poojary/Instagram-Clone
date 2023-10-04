@@ -1,10 +1,15 @@
 import { View, Text, StyleSheet, SafeAreaView, StatusBar, ScrollView } from "react-native";
 import React from "react";
+
+// Import components
 import Header from "../components/home/Header";
 import Stories from "../components/home/Stories";
 import Posts from "../components/home/Posts";
+import BottomTabs from "../components/home/BottomTabs";
 
+// Import data
 import { posts } from "../data/posts";
+import { bottomTabIcons } from "../data/bottom-tabs";
 
 const HomeScreen = () => {
   return (
@@ -18,6 +23,7 @@ const HomeScreen = () => {
             ))
         }
       </ScrollView>
+      <BottomTabs icons = {bottomTabIcons}/>
     </SafeAreaView>
   );
 };
