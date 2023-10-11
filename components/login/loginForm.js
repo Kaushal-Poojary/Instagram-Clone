@@ -46,7 +46,7 @@ const LoginForm = ({ navigation }) => {
                 autoCapitalize="none"
                 keyboardType="email-address"
                 textContentType="emailAddress"
-                autoFocus={true}
+                autoFocus={false}
                 onChangeText={handleChange("email")}
                 onBlur={handleBlur("email")}
                 value={values.email}
@@ -80,7 +80,7 @@ const LoginForm = ({ navigation }) => {
               disabled={!isValid}
             />
             <View style={styles.signupContainer}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => {navigation.navigate('Signup')}}>
                 <Text style={styles.text}>Don't have an account? Sign Up</Text>
               </TouchableOpacity>
             </View>
