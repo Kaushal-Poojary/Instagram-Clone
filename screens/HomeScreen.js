@@ -11,7 +11,7 @@ import BottomTabs from "../components/home/BottomTabs";
 import { posts } from "../data/posts";
 import { bottomTabIcons } from "../data/bottom-tabs";
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="black" />
@@ -23,7 +23,7 @@ const HomeScreen = () => {
             ))
         }
       </ScrollView>
-      <BottomTabs icons = {bottomTabIcons}/>
+      <BottomTabs icons = {bottomTabIcons} navigation = {navigation} />
     </SafeAreaView>
   );
 };

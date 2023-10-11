@@ -2,12 +2,20 @@ import { View, StyleSheet, TouchableOpacity, Image } from "react-native";
 import React, { useState } from "react";
 import { Divider } from "react-native-elements";
 
-const BottomTabs = ({ icons }) => {
+const BottomTabs = ({ icons, navigation }) => {
     const [activeTab, setActiveTab] = useState('Home');
 
-    const Icon = ({ icon }) => {
+    const Icon = ({ icon, onPress }) => {
+
+        const handleIconPress = () => {
+            setActiveTab(icon.name);
+            if (icon.name === 'Logout') {
+              navigation.navigate('Login');
+            }
+        };
+
         return (
-            <TouchableOpacity onPress = {() => setActiveTab(icon.name)}>
+            <TouchableOpacity onPress = {handleIconPress}>
                 <Image source={{uri: activeTab == icon.name ? icon.active : icon.inactive }} style={styles.icon} />
             </TouchableOpacity>
         );
@@ -43,3 +51,9 @@ const styles = StyleSheet.create({
 });
 
 export default BottomTabs;
+
+// onPress={() => {
+//     if (index == 4) {
+//         navigation.navigate('Login');
+//     }
+// }}
